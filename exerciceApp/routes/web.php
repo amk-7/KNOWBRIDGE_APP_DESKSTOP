@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,10 @@ Route::post('/translate', function (Request $request){
 })->middleware(['auth'])->name('translate');
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/time', [TestController::class, 'test'])->name('time');
+
+Route::get('/test', function () {
+    return view('test');
+});
