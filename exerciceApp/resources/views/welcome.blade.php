@@ -37,18 +37,50 @@
             @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
                             <div class="flex items-center">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.sillo.org/cours-laravel-9-la-localisation/" class="underline text-gray-900 dark:text-white">Equipe 2 TP : Evennement & Localisation</a></div>
+                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="/register" class="underline text-gray-900 dark:text-white">Equipe 2 TP : Evennement & Localisation</a></div>
                             </div>
+                            <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.sillo.org/cours-laravel-9-la-localisation/" class="underline text-gray-900 dark:text-white">Documentation</a></div>
                             <div class="ml-4 text-lg leading-5 font-semibold"><a href=https://laravel.sillo.org/les-fichiers-json-de-traduction/" class="text-gray-900 dark:text-white">Aure documentations</a></div>
                         </div>
                     </div>
                 </div>
+                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div class="p-6">
+                            <div class="">
+                                <div>
+                                    <label class="dark:text-white">Application Vue js- LARAVEL 8 </label>
+                                </div>
+                                <!-- L'élément #app -->
+                                <div>
+                                    <section id="app">
+                                        <!-- Le composant "MonComponent.vue" -->
+                                        <mon-component></mon-component>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+                                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                                    <div class="grid grid-cols-1 md:grid-cols-2">
+                                        <div class="p-6" id="upload">
+                                            <h1 class="dark:text-white">Laravel - Vue.js : Upload + Barre de progression</h1>
+                                            <!-- Le composant Vue d'upload de fichier -->
+                                            <upload-file></upload-file>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Le script compilé /public/js/app.js -->
+        <script type="text/javascript" src="{{ asset('js/app.js') }}" ></script>
     </body>
 </html>
